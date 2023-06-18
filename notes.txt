@@ -1,0 +1,19 @@
+#Terminal Commands In A Bullet Casing#
+pwd : Print Working Directory (Current Directory) (where tf am i)
+ls : List Files In Directory   
+cd : Change Directory (ex : cd Desktop/)
+cd .. : Back To Previous Directory
+mkdir : Make New Directory (Folder)
+rmdir : Remove Directory    
+touch : Make New File
+rm : Remove File
+code . : Open Directory In VS Code
+start . OR explorer . : Opens Current File In File Explorer
+clear : Delete Terminal Contents
+git init : Initialize Git Repo
+git log : Print Log
+git status : Print Status
+
+------------------------------------------------------------------------------
+#Python Shortcuts (Notes)#
+; => Ends Line
