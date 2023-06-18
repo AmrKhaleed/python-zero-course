@@ -1,8 +1,9 @@
 #Terminal Commands In A Bullet Casing#
 pwd : Print Working Directory (Current Directory) (where tf am i)
 ls : List Files In Directory   
-cd : Change Directory (ex : cd Desktop/)
+cd {Directory Name} : Change Directory (ex : cd Desktop/)
 cd .. : Back To Previous Directory
+cd : Returns To Root Directory
 mkdir : Make New Directory (Folder)
 rmdir : Remove Directory    
 touch : Make New File
@@ -21,7 +22,8 @@ git commit -m "Message" :  Commit Files To Repo With A Message
 #Upload To Online Git Hub#
 git remote add origin {Git URL From Github}
 git push origin master : Push Changes To master Branch {Branch Name}
-
+git pull origin master : Pull Changes From master Branch {Branch Name}
+git clone {Link} : Download Linked Repo
 ------------------------------------------------------------------------------
 #Python Shortcuts (Notes)#
 ; => Ends Line
