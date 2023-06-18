@@ -10,9 +10,17 @@ rm : Remove File
 code . : Open Directory In VS Code
 start . OR explorer . : Opens Current File In File Explorer
 clear : Delete Terminal Contents
+------------------------------------------------------------------------------
+#Git  Commands#
 git init : Initialize Git Repo
 git log : Print Log
 git status : Print Status
+git add . :  Add All Files In Directory To Repo
+git commit -m "Message" :  Commit Files To Repo With A Message
+
+#Upload To Online Git Hub#
+git remote add origin {Git URL From Github}
+git push origin master : Push Changes To master Branch {Branch Name}
 
 ------------------------------------------------------------------------------
 #Python Shortcuts (Notes)#
