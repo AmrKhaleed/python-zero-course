@@ -27,3 +27,7 @@ git clone {Link} : Download Linked Repo
 ------------------------------------------------------------------------------
 #Python Shortcuts (Notes)#
 ; => Ends Line
+CTRL + / => Make Line Comment
+------------------------------------------------------------------------------
+#Data Types#
+(type) => Type Of Given Data 
