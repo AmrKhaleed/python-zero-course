@@ -28,6 +28,26 @@ git clone {Link} : Download Linked Repo
 #Python Shortcuts (Notes)#
 ; => Ends Line
 CTRL + / => Make Line Comment
+help("Keywords") => Lists Unusable Words To Name Variables
++ => Concatenate or MERGE Two Variables Together
 ------------------------------------------------------------------------------
-#Data Types#
+#Define#
 (type) => Type Of Given Data 
+Variables => Python uses variables to allocate data in the computer memory whatever that means, Syntax => [Variable Name] [Assigment Operator] [Value] {myVariable = "My Value"}
+| Variable names must start with either (a-z), (A-Z) or _ Underscore and it can not include special characters and must be assigned before printing
+Source Code : Original Code You Write it in Computer
+Translation : Converting Source Code Into Machine Language
+Compilation : Translate Code Before Run Time
+Run-Time : Period App Takes To Execute Commands
+Interpreted : Code Translated On The Fly During Execution
+Concatenation : Attaching Strings With Each Other
+------------------------------------------------------------------------------
+#Escape Sequences Characters#
+\b => Backspace
+\ => Escape New Line + \ {So it can be put in a line of code to neglect the following letter} {It can also be used to solve code problems when putting words in quotes while still seeing them printed \"\"}
+\n => Line Feed {Seperates Line Into Two Lines Under Each Other}
+\r => Carriage Return {Puts following letters or numbers first in print and removes a number of letters or numbers equal to it from the back}
+\t => Horizontal Tab {Seperates Between Words By A Tab Distance}
+\xhh => Character Hex Value {Type Using Letter Hex Values}
+------------------------------------------------------------------------------
+
