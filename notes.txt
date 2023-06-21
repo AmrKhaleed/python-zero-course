@@ -30,6 +30,7 @@ git clone {Link} : Download Linked Repo
 CTRL + / => Make Line Comment
 help("Keywords") => Lists Unusable Words To Name Variables
 + => Concatenate or MERGE Two Variables Together
+len() => Prints number of characters in a string, 
 ------------------------------------------------------------------------------
 #Define#
 (type) => Type Of Given Data 
@@ -40,14 +41,32 @@ Translation : Converting Source Code Into Machine Language
 Compilation : Translate Code Before Run Time
 Run-Time : Period App Takes To Execute Commands
 Interpreted : Code Translated On The Fly During Execution
-Concatenation : Attaching Strings With Each Other
+Concatenation : Attaching Strings, Variables, Or Integers With Each Other
 ------------------------------------------------------------------------------
 #Escape Sequences Characters#
 \b => Backspace
-\ => Escape New Line + \ {So it can be put in a line of code to neglect the following letter} {It can also be used to solve code problems when putting words in quotes while still seeing them printed \"\"}
+\ => Escape New Line + \ {So it can be put in a line of code to neglect the following letter} {It can also be used to solve code problems when putting words in quotes while still seeing them printed \"\"} {An alterantive is using Triple Double or Triple Single Quotes}
 \n => Line Feed {Seperates Line Into Two Lines Under Each Other}
 \r => Carriage Return {Puts following letters or numbers first in print and removes a number of letters or numbers equal to it from the back}
 \t => Horizontal Tab {Seperates Between Words By A Tab Distance}
 \xhh => Character Hex Value {Type Using Letter Hex Values}
 ------------------------------------------------------------------------------
-
+#Slicing And Indexing
+By Using [] you can access specified parts of your variable value for whatever reason
+for example having 
+myIndexTest = "I Love Python" (Note that the index in python starts from 0 so the "I" in this case is element No. 0)
+print(myIndexTest[2]) => This will grant you "L"
+you  may use  slicing with a start and end point [4:9] and in case a start point is not included you will start from 0 and vice versa no endpoint then it goes to the end and if no end or start point they just take the whole value
+------------------------------------------------------------------------------
+#String Methods#
+.strip(), .rstrip(), .lstrip ("put any characters you want removed here") => Gives number of characters in a string but by removing all spaces, left spaces or right spaces and is used as follows a = "   S   ", print(a.strip) = 1
+.title() => Makes the first letter of your words caps
+.capitalize() => Makes the first letter of your string caps and the rest is all small
+.zfill() => Fills Appropriate number of given zeros before int you want {Using total number of int wanted}
+.upper, .lower => Makes current string characters all upper case or lower case
+.split, .rsplit => splits between words by a given seperator and maxsplit like so ... a = "I Love My Local Air Force" print(a.split("-", 3)), The "-" is a seperator indication and the "3" is the max split in elements so it will split 3 times then continue normally and using rsplit it will just split from the end
+.center => Centers the string between a given number of total numbers in the parameter with a specific symbol character or int whatever a = "Korgii" print(a.center(10, "#"))
+.count => Counts number of times a certain parameter has been written in your variable by full scan or by giving it a start and end point, print(a.count("Python", 1, 35)) note that it is case sensitive so the parameter must be typical
+.swapcase => Swaps all caps words with small ones and vice versa in the string
+.startswith, .endswith => Confirms via boolean wheather the variable ends with a given parameter or by giving it a start and end point too
+------------------------------------------------------------------------------
