@@ -30,7 +30,10 @@ git clone {Link} : Download Linked Repo
 CTRL + / => Make Line Comment
 help("Keywords") => Lists Unusable Words To Name Variables
 + => Concatenate or MERGE Two Variables Together
-len() => Prints number of characters in a string, 
+You can't put special characters  in variables or their values
+Ctrl + D => Selects two similar words 
+Ctrl + F => Search Words (And used to replace them :0)
+Ctrl + F2 => Selects all similar words
 ------------------------------------------------------------------------------
 #Define#
 (type) => Type Of Given Data 
@@ -59,14 +62,31 @@ print(myIndexTest[2]) => This will grant you "L"
 you  may use  slicing with a start and end point [4:9] and in case a start point is not included you will start from 0 and vice versa no endpoint then it goes to the end and if no end or start point they just take the whole value
 ------------------------------------------------------------------------------
 #String Methods#
+len() => Prints number of characters in a string
 .strip(), .rstrip(), .lstrip ("put any characters you want removed here") => Gives number of characters in a string but by removing all spaces, left spaces or right spaces and is used as follows a = "   S   ", print(a.strip) = 1
 .title() => Makes the first letter of your words caps
 .capitalize() => Makes the first letter of your string caps and the rest is all small
 .zfill() => Fills Appropriate number of given zeros before int you want {Using total number of int wanted}
 .upper, .lower => Makes current string characters all upper case or lower case
 .split, .rsplit => splits between words by a given seperator and maxsplit like so ... a = "I Love My Local Air Force" print(a.split("-", 3)), The "-" is a seperator indication and the "3" is the max split in elements so it will split 3 times then continue normally and using rsplit it will just split from the end
-.center => Centers the string between a given number of total numbers in the parameter with a specific symbol character or int whatever a = "Korgii" print(a.center(10, "#"))
+.center => Centers the string between a given number of total numbers in the parameter with a specific symbol character or int whatever a = "Korgii" print(a.center(10, "#")) => ##Korgii##
 .count => Counts number of times a certain parameter has been written in your variable by full scan or by giving it a start and end point, print(a.count("Python", 1, 35)) note that it is case sensitive so the parameter must be typical
 .swapcase => Swaps all caps words with small ones and vice versa in the string
 .startswith, .endswith => Confirms via boolean wheather the variable ends with a given parameter or by giving it a start and end point too
-------------------------------------------------------------------------------
+.index => Looks for given Element in variable and gives you it's position using numbers EXCEPT it gives an error if the element is not found and you can  give the start and end and parameter
+.find => Looks for given Element in variable and gives you it's position using numbers EXCEPT it gives -1 if the element is not found and you can  give the start and end and parameter
+.rjust, .ljust => Fills out total  given number of elements with spaces if no fill char is provided or a specific fill char if provided
+.splitlines => Creates list with multiple line var
+.expandtabs => Increases seperation  distance  when using \t
+.replace => Replaces given keyword in "" with another given word or number and the possibility to limit  the number of replacements print
+.join => Joins list as string ? print("seperator".join(var))
+--------------------------------------------------------------------------------
+.isidentifier => Checks  if its a proper variable
+.isupper, .islower => Checks if all value is upper or lower case
+.isalpha => checks if the string is alphabetical
+.isalnum => checks if string is both alphabetical and numerical
+.isspace => checks if its an empty space ?
+.istitle => Checks if all first letters are caps
+---------------------------------------------------------------------------------
+#Formatting#
+Old Way : Using place holders to concatenate strings with integers using %s for strings %f for floaters and %d for digits ---> print("My name is: %s and i cost: %f in the black market and im : %d years old" % (name, price, age))

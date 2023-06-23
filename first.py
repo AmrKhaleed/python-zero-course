@@ -53,15 +53,15 @@ Ipsum
 Amet"""
 #Up here using Triple double quotes or even using triple single quotes does mulitiple lines in one variable
 print(myStringOne)
-myIndexTest = "   I Hate Java script   "
+myIndexTest = "I Hate java script"
 #Slicing And Indexing
 print(myIndexTest[4:9]) # Using slicing and indexing to isolate value elements Note THAT END ELEMENT IS NOT INCLUDED So if you want from 4 to 8 you will type [4:9] 
 print(myIndexTest[::3])
 #String Methods
 print(len(myIndexTest)) # Here you can clearly see we used the len function to print the number of characters of our variable
 print(myIndexTest.strip())
-print(myIndexTest.title())
-print(myIndexTest.capitalize)
+print("myIndexTest".title())
+print(myIndexTest.capitalize())
 
 e, f, g = "2", "5", "99"
 print(e.zfill(2))
@@ -75,7 +75,7 @@ print(z.split("-", 3))
 k = "Korgii"
 print(k.center(10, "0")) # Using .center method with parameter of 10 total characters and symbol "0" to center the string in
 
-m = "Can't you be so gentle Can't you be ??"
+m = "Can't\tyou\tbe\tso\tgentle\tCan't\tyou\tbe\t??"
 print(m.count("Can't", 0, 99)) # Counts 2 Can't words in the string like so nOTE that the 0 is the starting word we need counted so always start with 0 if you give a start and end point :)
 
 print(m.swapcase())
@@ -83,3 +83,57 @@ print(m.swapcase())
 print(m.startswith("C", 23, 38)) # Using start and end points to determine boolean
 
 print(m.endswith("e", 0, 12))
+
+print(k.rjust(10, "O")) # Filling out 4 O's in the word left side because the word is right justified
+
+w = """Korgii
+Treason
+Mahdy"""
+print(w.splitlines())
+
+print(m.expandtabs(9))
+#Boolean Methods
+kamo = "Brother Oma Opa Geschwester"
+print(kamo.isalpha()) #isalpha, identifier, upper, lower, alnum, tite, space ...
+
+print(kamo.replace("Oma", "1", 2)) 
+
+myCampingList= ["Mahdy", "Korgii", "Zema"]
+
+print("-".join(myCampingList))
+
+#Old Formatting And Placeholders
+name = "Ian"
+
+price = 200
+
+age = 92
+
+print("Mein name ist: %s und ich koste: %s und ich bin %s jahre ult" % (name, price, age)) 
+# Here we clearly used a placeholder to fix the otherwise troubled code because 
+# we can concatenate int with string so we do %s and outside quote use % and then () and the replacements in order
+print("My name is: %s and i cost: %.2f in the black market and im : %d years old" % (name, price, age)) 
+# %s --> String
+# %d --> Digit
+# %f --> Floating and you can control number of zeroes after . by typing %.5f for example to have 5 zeroes
+
+
+
+
+# n = "Amr"
+# l = "Pythonista"
+# y = 10
+
+# print("My name is : %s and i have %d years of expierence in %s" % (n, y, l)) 
+
+Obunga = "Korgii"
+
+sen = 17
+
+country =  "Egypt"
+print("Hello my name %s and i am %d years old and i currently live in %s" % (Obunga, sen, country))
+
+name2 = "    Elzero     "
+print(name2[1])
+print(name2[2])
+print(name2[5])
