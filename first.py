@@ -58,7 +58,7 @@ myIndexTest = "I Hate java script"
 print(myIndexTest[4:9]) # Using slicing and indexing to isolate value elements Note THAT END ELEMENT IS NOT INCLUDED So if you want from 4 to 8 you will type [4:9] 
 print(myIndexTest[::3])
 #String Methods
-print(len(myIndexTest)) # Here you can clearly see we used the len function to print the number of characters of our variable
+print(len(myIndexTest)) # Here you can c    learly see we used the len function to print the number of characters of our variable
 print(myIndexTest.strip())
 print("myIndexTest".title())
 print(myIndexTest.capitalize())
@@ -101,8 +101,8 @@ print(kamo.replace("Oma", "1", 2))
 myCampingList= ["Mahdy", "Korgii", "Zema"]
 
 print("-".join(myCampingList))
-
-#Old Formatting And Placeholders
+#--------------------------------------------------------------------------------------------
+#?Old Formatting And Placeholders
 name = "Ian"
 
 price = 200
@@ -116,24 +116,73 @@ print("My name is: %s and i cost: %.2f in the black market and im : %d years old
 # %s --> String
 # %d --> Digit
 # %f --> Floating and you can control number of zeroes after . by typing %.5f for example to have 5 zeroes
+#--------------------------------------------------------------------------------------------
+#? New Formatting
+print("My name is {:s} and i cost {:f} and i am {:d}  years old" .format(name, price, age))
 
+#Formatting Money
+balance = (4000000)
+print("Your balance contains {:,}".format(balance))
 
+lok, mak, mig = (1, 2, 3)
+print("Hello {2:.3f} {0:.5f} {1:.4f}".format(lok, mak, mig)) #Hello Three One Two replacing placeholder variable
 
+print(f"Hello my name is {name} and i cost {price} and i am {age} years old") #3rd formatting method by typing "f" before the string and just typing the var name inside the placeholder
+#--------------------------------------------------------------------------------------------
+#?Arithmetic Operators
+print(1 + 2) #3
+print(3 - 2) #1
+print(1 * 22) #22
+print(int(8 / 2)) #4 Or 4.0 with out the int method
+print(9 //  2) #4
+print(2 ** 2) #4 
+#--------------------------------------------------------------------------------------------
+#?Lists
+#List Methods (We first use the method not use it in the print like string methods)
+myList = [1, 2, 3, 4, 5]
+myList2 = [6, 7, 8, 9]
+myList.extend(myList2)
+print(myList) #Extending lists
 
-# n = "Amr"
-# l = "Pythonista"
-# y = 10
+myList.append(myList2)
+print(myList) #Appending  adding second list as a single element
+print(myList[9][1]) #Indexing from the added list
 
-# print("My name is : %s and i have %d years of expierence in %s" % (n, y, l)) 
+myList.remove(2)
+print(myList) #Remove methods
 
-Obunga = "Korgii"
+SortedList = [99, 244, -32, 1]
+SortedList.sort() #Decending  Sorting of  list (Remove reverse=True or replace true with false for acending sorting)
+print(SortedList)
 
-sen = 17
+OneList = [1, 2, 3, 4, 5]
+OneList.reverse()
+print(OneList) #Reversed list contents from end to start
 
-country =  "Egypt"
-print("Hello my name %s and i am %d years old and i currently live in %s" % (Obunga, sen, country))
+p = ["Mankind", 1, 2, 3]
+# p.clear()
+print(p)
 
-name2 = "    Elzero     "
-print(name2[1])
-print(name2[2])
-print(name2[5])
+p.copy() #Shallow copy of list
+print(p)
+
+print(p.count(1)) #1 was mentioned only once
+
+print(p.index("Mankind")) #Location of mankind is 0 index
+
+p.insert(1, "LoL")
+print(p) # Added LoL in string 1 so before the 1st element and it took its position really
+
+print(p.pop(0))  #Returns only 0 index in terminal as mankind
+#--------------------------------------------------------------------------------------------
+#? Tuples
+#Tuples are really similar to lists in indexing and counting that's all
+
+#Tuple Destruction
+
+tony = ("A", "B", 4, "C") 
+loka, moka, _, toka = tony # Used _ to ignore extra value, And assigned all variables to the values of another variable
+print(loka) # A
+print(moka) # B
+print(toka) # C
+#--------------------------------------------------------------------------------------------

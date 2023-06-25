@@ -34,6 +34,8 @@ You can't put special characters  in variables or their values
 Ctrl + D => Selects two similar words 
 Ctrl + F => Search Words (And used to replace them :0)
 Ctrl + F2 => Selects all similar words
+_ => ignores value that is supposed to be located when assigning multiple vars to multiple values
+print(variable * 2) => Multiplicates elements of variable twice or as many times as you type
 ------------------------------------------------------------------------------
 #Define#
 (type) => Type Of Given Data 
@@ -90,3 +92,49 @@ len() => Prints number of characters in a string
 ---------------------------------------------------------------------------------
 #Formatting#
 Old Way : Using place holders to concatenate strings with integers using %s for strings %f for floaters and %d for digits ---> print("My name is: %s and i cost: %f in the black market and im : %d years old" % (name, price, age))
+
+New Way : Using {} marks instead of %s as place holders and .format instead of the % and same rules apply with using {:.2f} and all 
+you can use {:s} {:d} {:.f} and {:,} to seperate between numbers and {:.s} to Truncate string or use an "f" before the string and type the var names inside the placeholder like Java Script
+---------------------------------------------------------------------------------
+#Arithmetic Operators#
+* => Multiplication
++ => Addition
+- => Subtraction
+/ => Division
+// => Floor Division
+** => Exponent
+---------------------------------------------------------------------------------
+#Lists#
+[1] List Items Are Enclosed in Square Brackets []
+[2] List Are Ordered, To Use Index To Access Item
+[3] List Are Mutable => Add, Delete, Edit ---> print(myList[1:4]) = [] Removes elements from 1 to 3, or ["A", "B", "C"] Edits  from  1 to 3  with  A B C or just  ["A"] edits first 3 with an A
+[4] List Items Is Not Unique ---> So i can have One Two and then One again easily
+[5] List Can Have Different Data Types  ---> So it can have booleans int str and whatever really
+
+#List Methods#
+.append() => Adds given element to the list, can also add 2 lists together but the added list will be treated as one element and if  you want to index something from the added list you type,  print(myList[added list number][wanted element from within])
+.extend() => Adds 2 list contents together like concatenation but  by extending the original list to house both of them together so the added list is treated with the number of elements inside it
+.remove() => Removes element from list by typing wanted element in the bracks {Only removes the element once tho} :/
+.sort() => Arranges elements of your list accendingly by defualt but can be changed to decending by typing adding (reverse=True) in the bracks {Note that it cant arrange strings and numbers at the same time}
+.reverse() => Reverses order of your list end comes first
+.clear() => Clears list of it's items like you do in shopping carts for example 
+.copy() => Takes a shallow copy of the list that is not edited by editing the original list, Used like --> {a = b.copy()}
+.index() => Gives location of given string or int or whatever in list and is used in the print 
+.count() => Counts number of times the string has been mentioned in the list 
+.insert() => Inserts new element to the list in the location you want unlike append, And is used like {f.insert(1, "Carl)}
+.pop() => Returns given index from list alone by giving it the element location
+------------------------------------------------------------------------------------------------------------------------------
+#Tuples#
+[1] Tuple Items Are Enclosed in Parentheses
+[2] You Can Remove The Parentheses If You Want
+[3] Tuple Are Ordered, To Use Index To Access Item
+[4] Tuple Are Immutable => You Cant Add or Delete 
+[5] Tuple Items Is Not Unique
+[6] Tuple Can Have Different Data Types
+[7] Operators Used in Strings and Lists Available In Tuples
+Note : To identify tuple as a tuple you add a , after the () myTuple = ("Amr"),
+
+#Tuple Methods#
+.index() => Gives location of given string or int or whatever in list and is used in the print 
+.count() => Counts number of times the string has been mentioned in the list 
+------------------------------------------------------------------------------------------------------------------------------
